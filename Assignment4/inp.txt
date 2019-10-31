@@ -1,0 +1,4 @@
+insert 92
+insert 42
+increase-key 0 92
+sort

@@ -1,0 +1,31 @@
+6 inserted
+9 inserted
+3 inserted
+19 inserted
+0 inserted
+5 inserted
+0 3 5 6 9 19
+6 3 0 5 9 19
+6 found
+8 not found
+10 does not exist
+9 deleted
+21 inserted
+13 inserted
+21
+0
+0 5 3 13 21 19 6
+4 does not exist
+13
+predecessor of 0 does not exist
+0 deleted
+3 deleted
+5 deleted
+6 deleted
+19 deleted
+13 deleted
+21 deleted
+1 does not exist
+
+1 inserted
+1
