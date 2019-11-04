@@ -2,7 +2,7 @@
 
 using namespace std;
 
-ofstream off("temp.txt");
+ofstream off("dijkstra.txt");
 
 class graph {
 	int size;
@@ -25,16 +25,14 @@ public:
 		}
 		dist[source] = 0;
 		priority_queue <pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > pq;
-		for (int i=0; i<size; i++) {
-			if(i == source)
-				pq.emplace(make_pair(0,i));
-			else pq.emplace(make_pair(INT_MAX,i));
-		}
+		pq.emplace(make_pair(0,source));
+
 		while (!pq.empty()) {
 			auto u = pq.top();
 			pq.pop();
 			for (auto v : adj_list[u.second]) {
 				relax(u.second,v.first,v.second,dist);
+				pq.emplace(make_pair(dist[v.first],v.first));
 			}
 		}
 		for (int i=0; i<size; i++) {
