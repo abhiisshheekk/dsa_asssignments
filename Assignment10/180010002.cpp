@@ -16,7 +16,7 @@ int hashing(string s, int n) {
 int main(int argc, char ** argv){
     ifstream if1(argv[1]);
     ifstream if2(argv[3]);
-    ofstream off("temp.txt");
+    ofstream off("anagrams.txt");
     int size = atoi(argv[2]);
     vector<list<string>> hash(size);
     string word;
